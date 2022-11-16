@@ -1,6 +1,7 @@
 FROM golang:alpine3.16
 
 LABEL author="Peter Naumoff"
+LABEL org.opencontainers.image.source https://github.com/naumoffp/EC2Trade
 
 # Copy all of the application files into the container
 WORKDIR /EC2Trade

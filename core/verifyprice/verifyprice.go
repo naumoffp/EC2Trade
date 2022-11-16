@@ -4,10 +4,8 @@ import (
 	"bufio"
 	"bytes"
 	"encoding/csv"
-	"fmt"
 	"io"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"strings"
 	"unicode"
@@ -16,33 +14,33 @@ import (
 // UNUSED allows unused variables to be included in Go programs
 func UNUSED(x ...interface{}) {}
 
-func exec_script(bin string, script string) string {
-	// Execute the bash script
-	cmd, err := exec.Command(bin, script).Output()
-	if err != nil {
-		fmt.Printf("error %s", err)
-	}
+// func exec_script(bin string, script string) string {
+// 	// Execute the bash script
+// 	cmd, err := exec.Command(bin, script).Output()
+// 	if err != nil {
+// 		fmt.Printf("error %s", err)
+// 	}
 
-	output := string(cmd)
-	return output
-}
+// 	output := string(cmd)
+// 	return output
+// }
 
 // Chain together all the steps needed to verify the price of spot instances
 func CHAINVERIFYPRICE() ([][]string, []string) {
-	var getspotprice, g_err = filepath.Abs("core/verifyprice/getspotprice.sh")
-	var json2csv, j_err = filepath.Abs("core/verifyprice/json2csv.py")
+	// var getspotprice, g_err = filepath.Abs("core/verifyprice/getspotprice.sh")
+	// var json2csv, j_err = filepath.Abs("core/verifyprice/json2csv.py")
 
-	// TODO
-	UNUSED(g_err, j_err)
+	// // TODO
+	// UNUSED(g_err, j_err)
 
-	// Download the spot price data using current filters
-	var download_json = exec_script("bash", getspotprice)
+	// // Download the spot price data using current filters
+	// var download_json = exec_script("bash", getspotprice)
 
-	// Convert and sort the downloaded JSON data into a CSV file
-	var convert_json = exec_script("python3", json2csv)
+	// // Convert and sort the downloaded JSON data into a CSV file
+	// var convert_json = exec_script("python3", json2csv)
 
-	// TODO
-	UNUSED(download_json, convert_json)
+	// // TODO
+	// UNUSED(download_json, convert_json)
 
 	// Remove redundant "SpotPriceHistory." from each header and newlines
 	var csvdata, c_err = filepath.Abs("core/verifyprice/data/spot-price-history.csv")
