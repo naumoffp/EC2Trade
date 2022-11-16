@@ -1,0 +1,46 @@
+{
+    "SpotPriceHistory": [
+        {
+            "AvailabilityZone": "us-west-2c",
+            "InstanceType": "t2.micro",
+            "ProductDescription": "Linux/UNIX",
+            "SpotPrice": "0.003500",
+            "Timestamp": "2022-11-11T12:00:43+00:00"
+        },
+        {
+            "AvailabilityZone": "us-west-2a",
+            "InstanceType": "t2.micro",
+            "ProductDescription": "Linux/UNIX",
+            "SpotPrice": "0.003500",
+            "Timestamp": "2022-11-11T12:00:43+00:00"
+        },
+        {
+            "AvailabilityZone": "us-west-2b",
+            "InstanceType": "t2.micro",
+            "ProductDescription": "Linux/UNIX",
+            "SpotPrice": "0.003500",
+            "Timestamp": "2022-11-11T12:00:43+00:00"
+        },
+        {
+            "AvailabilityZone": "us-west-2c",
+            "InstanceType": "t2.micro",
+            "ProductDescription": "Linux/UNIX",
+            "SpotPrice": "0.003500",
+            "Timestamp": "2022-11-10T12:00:39+00:00"
+        },
+        {
+            "AvailabilityZone": "us-west-2a",
+            "InstanceType": "t2.micro",
+            "ProductDescription": "Linux/UNIX",
+            "SpotPrice": "0.003500",
+            "Timestamp": "2022-11-10T12:00:39+00:00"
+        },
+        {
+            "AvailabilityZone": "us-west-2b",
+            "InstanceType": "t2.micro",
+            "ProductDescription": "Linux/UNIX",
+            "SpotPrice": "0.003500",
+            "Timestamp": "2022-11-10T12:00:39+00:00"
+        }
+    ]
+}

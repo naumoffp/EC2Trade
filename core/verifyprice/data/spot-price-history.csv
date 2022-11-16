@@ -1,0 +1,7 @@
+SpotPriceHistory.AvailabilityZone,SpotPriceHistory.InstanceType,SpotPriceHistory.SpotPrice
+us-west-2c,t2.micro,0.003500
+us-west-2c,t2.micro,0.003500
+us-west-2b,t2.micro,0.003500
+us-west-2b,t2.micro,0.003500
+us-west-2a,t2.micro,0.003500
+us-west-2a,t2.micro,0.003500
