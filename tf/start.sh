@@ -33,4 +33,4 @@ code --new-window \
 	--skip-add-to-recently-opened \
 	--disable-workspace-trust \
 	--remote \
-	"ssh-remote+ubuntu@${ec2_ip}" /home/ubuntu
+	"ssh-remote+ec2-user@${ec2_ip}" /home/ubuntu

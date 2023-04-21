@@ -1,0 +1,3 @@
+sudo yum install -y amazon-efs-utils
+pip3 -q install botocore
+sudo mount -t efs -o az=$EFS_MOUNT_AZ,tls,accesspoint=$ACCESS_POINT_DATA $EFS_ID:/ /home/ec2-user

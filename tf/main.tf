@@ -171,24 +171,38 @@ resource "aws_ssm_parameter" "trade_ssh_key" {
 # This is where the amazon machine image is defined
 # TODO: Make this configurable
 data "aws_ami" "trade_os" {
+
   owners = ["amazon"]
   most_recent = "true"
-  # arn "ami-0db84aebfa8d17e23"
 
   filter {
     name = "name"
-    values = [ "ubuntu/images/hvm-ssd/ubuntu-jammy-*" ]
-  }
-
-  filter {
-    name = "architecture"
-    values = ["x86_64"]
+    values = [ "amzn2-ami-kernel-*" ]
   }
 
   filter {
     name   = "virtualization-type"
     values = ["hvm"]
   }
+
+  # owners = ["amazon"]
+  # most_recent = "true"
+  # # arn "ami-0db84aebfa8d17e23"
+
+  # filter {
+  #   name = "name"
+  #   values = [ "ubuntu/images/hvm-ssd/ubuntu-jammy-*" ]
+  # }
+
+  # filter {
+  #   name = "architecture"
+  #   values = ["x86_64"]
+  # }
+
+  # filter {
+  #   name   = "virtualization-type"
+  #   values = ["hvm"]
+  # }
 }
 
 resource "aws_iam_instance_profile" "trade_ec2_profile" {
