@@ -1,6 +1,6 @@
 module github.com/naumoffp/EC2Trade
 
-go 1.19
+go 1.24.0
 
 require (
 	github.com/gdamore/tcell/v2 v2.5.3
@@ -18,8 +18,8 @@ require (
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/rivo/uniseg v0.4.2 // indirect
 	github.com/zclconf/go-cty v1.11.0 // indirect
-	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e // indirect
-	golang.org/x/sys v0.0.0-20220318055525-2edf467146b5 // indirect
-	golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/term v0.37.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 )
